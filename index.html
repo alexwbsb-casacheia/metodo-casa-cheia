@@ -764,55 +764,209 @@ footer{
 </section>
 
 <!-- ════ SELO ════ -->
-<section class="selo-section" style="padding: 96px 0; position: relative;">
-  <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px;">
-    <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: center;">
-
-      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img 
-          src="./assetsselo-casa-cheia.png.png" 
-          alt="Selo Casa Cheia" 
-          width="340" 
-          height="340" 
-          loading="lazy"
-          style="width: min(340px, 82vw); height: auto; display: block; margin-bottom: 28px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.32));"
-        >
-
-        <h3 style="margin: 0 0 16px; font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1; color: #c9a84c;">
-          Selo Casa Cheia™
-        </h3>
-
-        <p style="margin: 0; max-width: 420px; font-size: 1.2rem; line-height: 1.7; color: rgba(255,255,255,0.72);">
-          Concedido a restaurantes que atingem resultados certificados com o método.
-        </p>
-      </div>
-
-      <div>
-        <div style="margin-bottom: 18px; font-size: 0.9rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #c9a84c;">
-          O selo que muda a percepção
-        </div>
-
-        <h2 style="margin: 0 0 22px; font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 6vw, 5.4rem); line-height: 0.96; color: #f5efe6;">
-          Não é um prêmio.<br>
-          <span style="color: #c9a84c; font-style: italic;">É uma conquista.</span>
-        </h2>
-
-        <div style="width: 72px; height: 2px; background: #c9a84c; margin: 0 0 28px;"></div>
-
-        <p style="margin: 0 0 24px; font-size: 1.26rem; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 760px;">
-          Restaurantes que alcançam resultados consistentes com o método recebem o <strong style="color:#ffffff;">Selo Casa Cheia™</strong>, uma certificação que sinaliza ao mercado que aquele estabelecimento opera com estratégia de vendas de alta performance.
-        </p>
-
-        <p style="margin: 0 0 24px; font-size: 1.26rem; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 760px;">
-          É o equivalente gastronômico de uma certificação de excelência em resultado. Não se compra. Se conquista. E quando um restaurante o exibe, outros donos perguntam como chegaram lá.
-        </p>
-
-        <p style="margin: 0; font-size: 1.26rem; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 760px;">
-          Esse é o efeito que construímos: <strong style="color:#ffffff;">restaurantes que indicam outros restaurantes.</strong> Um ecossistema de resultados que se autopropaga.
-        </p>
-      </div>
-
+<section class="selo-section-premium">
+  <div class="selo-wrap">
+    <div class="selo-card">
+      <div class="selo-glow"></div>
+      <img
+        src="./assetsselo-casa-cheia.png.png"
+        alt="Selo Casa Cheia"
+        width="420"
+        height="420"
+        loading="lazy"
+        class="selo-img"
+      >
+      <h3 class="selo-title">Selo Casa Cheia™</h3>
+      <p class="selo-caption">
+        Concedido a restaurantes que atingem resultados certificados com o método.
+      </p>
     </div>
+
+    <div class="selo-copy">
+      <div class="selo-kicker">O selo que muda a percepção</div>
+
+      <h2 class="selo-headline">
+        Não é um prêmio.<br>
+        <span>É uma conquista.</span>
+      </h2>
+
+      <div class="selo-line"></div>
+
+      <p>
+        Restaurantes que alcançam resultados consistentes com o método recebem o
+        <strong>Selo Casa Cheia™</strong>, uma certificação que sinaliza ao mercado
+        que aquele estabelecimento opera com estratégia de vendas de alta performance.
+      </p>
+
+      <p>
+        É o equivalente gastronômico de uma certificação de excelência em resultado.
+        Não se compra. Se conquista. E quando um restaurante o exibe, outros donos
+        perguntam como chegaram lá.
+      </p>
+
+      <p>
+        Esse é o efeito que construímos:
+        <strong>restaurantes que indicam outros restaurantes.</strong>
+        Um ecossistema de resultados que se autopropaga.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .selo-section-premium {
+    position: relative;
+    padding: clamp(72px, 10vw, 120px) 0;
+    background:
+      radial-gradient(circle at 18% 35%, rgba(201,168,76,0.10) 0%, rgba(201,168,76,0.03) 28%, rgba(0,0,0,0) 54%),
+      linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,0.06) 100%);
+  }
+
+  .selo-wrap {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.95fr 1.15fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .selo-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(12px, 2vw, 20px);
+  }
+
+  .selo-glow {
+    position: absolute;
+    inset: 8% 10%;
+    background: radial-gradient(circle, rgba(201,168,76,0.16) 0%, rgba(201,168,76,0.05) 42%, rgba(0,0,0,0) 72%);
+    filter: blur(12px);
+    pointer-events: none;
+  }
+
+  .selo-img {
+    position: relative;
+    width: min(420px, 88vw);
+    height: auto;
+    display: block;
+    margin-bottom: 28px;
+    filter: drop-shadow(0 24px 52px rgba(0,0,0,0.34));
+  }
+
+  .selo-title {
+    margin: 0 0 14px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1;
+    color: #c9a84c;
+    letter-spacing: -0.02em;
+  }
+
+  .selo-caption {
+    margin: 0;
+    max-width: 420px;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.75;
+    color: rgba(255,255,255,0.70);
+  }
+
+  .selo-kicker {
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c9a84c;
+  }
+
+  .selo-headline {
+    margin: 0 0 22px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+    color: #f5efe6;
+  }
+
+  .selo-headline span {
+    color: #c9a84c;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .selo-line {
+    width: 78px;
+    height: 2px;
+    margin: 0 0 30px;
+    background: linear-gradient(90deg, #c9a84c 0%, rgba(201,168,76,0.1) 100%);
+  }
+
+  .selo-copy p {
+    margin: 0 0 24px;
+    max-width: 760px;
+    font-size: clamp(1.08rem, 1.4vw, 1.28rem);
+    line-height: 1.85;
+    color: rgba(255,255,255,0.72);
+  }
+
+  .selo-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .selo-copy strong {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .selo-wrap {
+      grid-template-columns: 1fr;
+      gap: 44px;
+    }
+
+    .selo-card {
+      order: 1;
+    }
+
+    .selo-copy {
+      order: 2;
+      text-align: left;
+    }
+
+    .selo-line {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .selo-section-premium {
+      padding: 72px 0;
+    }
+
+    .selo-wrap {
+      width: min(100%, calc(100% - 28px));
+      gap: 36px;
+    }
+
+    .selo-img {
+      width: min(300px, 82vw);
+      margin-bottom: 22px;
+    }
+
+    .selo-caption {
+      max-width: 320px;
+    }
+
+    .selo-copy p {
+      line-height: 1.75;
+    }
+  }
+</style>
 </section>
 
 <!-- ════ CTA FINAL ════ -->
