@@ -527,6 +527,54 @@ footer{
   <span>HIGH-FLOW RESTAURANT PERFORMANCE</span>
 </div>
 
+<style>
+.hero-pm-kicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: min(100%, 340px);
+  margin: 0 auto;
+  padding: 12px 16px;
+  border: 1px solid rgba(201,168,76,0.22);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(201,168,76,0.09) 0%, rgba(201,168,76,0.03) 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.hero-pm-kicker span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #c9a84c;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 640px) {
+  .hero-pm-kicker {
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    max-width: 520px;
+    border-radius: 999px;
+  }
+
+  .hero-pm-kicker span {
+    width: auto;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    letter-spacing: 0.11em;
+  }
+}
+</style>
+
     <!-- LOGO CENTRALIZADA -->
     <div class="hero-pm-logo-ring">
       <div class="hero-pm-logo-glow"></div>
