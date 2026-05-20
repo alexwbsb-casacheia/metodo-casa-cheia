@@ -1014,45 +1014,311 @@ footer{
 </section>
 
 <!-- ════ DOR ════ -->
-<section class="dor-section">
-  <div class="wrap">
-    <span class="label-tag reveal">A realidade de quem ainda não tem o método</span>
-    <h2 class="section-h reveal">
-      Enquanto você<br><em>espera, o caixa sangra.</em>
-    </h2>
-    <div class="gold-rule reveal"></div>
+<section class="dor-section-premium">
+  <div class="dor-wrap">
+
+    <div class="dor-heading">
+      <div class="dor-kicker">A realidade de quem ainda não tem o método</div>
+
+      <h2 class="dor-title">
+        Enquanto você<br>
+        <span>espera, o caixa sangra.</span>
+      </h2>
+
+      <div class="dor-line"></div>
+    </div>
+
     <div class="dor-grid">
-      <div class="dor-card reveal">
-        <div class="dor-icon">🍽️</div>
+      <article class="dor-card">
+        <div class="dor-card-icon">◐</div>
         <h3>Salão vazio em dia de semana</h3>
         <p>Segunda, terça, quarta. A equipe está, o custo está, o cliente não está. Você depende do fim de semana para respirar e isso não é estratégia, é sobrevivência.</p>
-      </div>
-      <div class="dor-card reveal">
-        <div class="dor-icon">📱</div>
+      </article>
+
+      <article class="dor-card">
+        <div class="dor-card-icon">▦</div>
         <h3>Refém das plataformas de delivery</h3>
         <p>Eles levam até 30% da sua margem, controlam os dados do seu cliente e te tratam como fornecedor. Você não é dono do canal, nem do relacionamento, nem do preço.</p>
-      </div>
-      <div class="dor-card reveal">
-        <div class="dor-icon">📸</div>
+      </article>
+
+      <article class="dor-card">
+        <div class="dor-card-icon">◫</div>
         <h3>Marketing que gera like, não receita</h3>
         <p>Vídeo bonito no reels, foto profissional, stories todo dia. A conta do Instagram cresce. A conta do banco não. Engajamento não paga fornecedor.</p>
-      </div>
-      <div class="dor-card reveal">
-        <div class="dor-icon">📉</div>
+      </article>
+
+      <article class="dor-card">
+        <div class="dor-card-icon">╱</div>
         <h3>Zero previsibilidade de faturamento</h3>
         <p>Você não sabe o que vai entrar semana que vem. Não tem como planejar estoque, escalar equipe ou reinvestir. Cada mês começa do zero.</p>
-      </div>
+      </article>
     </div>
-    <div class="dor-quote reveal">
-      <p>"O maior erro dos restaurantes é <strong>não ter uma estratégia que gere receita antes do cliente consumir.</strong> Isso não existe no mercado gastronômico brasileiro, é exatamente por isso que o Método Casa Cheia™ funciona."</p>
+
+    <div class="dor-quote-box">
+      <div class="dor-quote-mark">“</div>
+      <p>
+        "O maior erro dos restaurantes é <strong>não ter uma estratégia que gere receita antes do cliente consumir.</strong>
+        <span>Isso não existe no mercado gastronômico brasileiro, e é exatamente por isso que o Método Casa Cheia™ funciona.</span>"
+      </p>
     </div>
-    <div class="dor-cta-wrap reveal">
-      <a href="https://SEU-TYPEFORM-LINK-AQUI.typeform.com/to/XXXXXX" target="_blank" rel="noopener noreferrer" class="cta-primary">
-        Eu quero o Método
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+
+    <div class="dor-cta-wrap">
+      <a href="https://SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer" class="dor-cta">
+        Eu quero o Método <span>→</span>
       </a>
     </div>
+
   </div>
+</section>
+
+<style>
+  .dor-section-premium {
+    position: relative;
+    padding: clamp(72px, 9vw, 120px) 0;
+    background:
+      radial-gradient(circle at 50% 18%, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.02) 24%, rgba(0,0,0,0) 48%);
+  }
+
+  .dor-wrap {
+    width: min(1180px, calc(100% - 28px));
+    margin: 0 auto;
+  }
+
+  .dor-heading {
+    margin-bottom: clamp(30px, 5vw, 46px);
+  }
+
+  .dor-kicker {
+    margin-bottom: 18px;
+    font-size: 0.84rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c9a84c;
+  }
+
+  .dor-title {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 7vw, 5.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    color: #f5efe6;
+    text-wrap: balance;
+  }
+
+  .dor-title span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c9a84c;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .dor-line {
+    width: 78px;
+    height: 2px;
+    margin-top: 24px;
+    background: linear-gradient(90deg, #c9a84c 0%, rgba(201,168,76,0.1) 100%);
+  }
+
+  .dor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  .dor-card {
+    position: relative;
+    padding: 24px 22px;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.03),
+      0 18px 40px rgba(0,0,0,0.16);
+    backdrop-filter: blur(4px);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .dor-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(201,168,76,0.22);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.04),
+      0 22px 48px rgba(0,0,0,0.22);
+  }
+
+  .dor-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(201,168,76,0.28) 0%, rgba(201,168,76,0) 100%);
+    border-radius: 18px 18px 0 0;
+  }
+
+  .dor-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.14);
+    color: #d3b15a;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .dor-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.28rem;
+    line-height: 1.3;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .dor-card p {
+    margin: 0;
+    font-size: 1.04rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.68);
+  }
+
+  .dor-quote-box {
+    position: relative;
+    margin-top: 8px;
+    padding: clamp(28px, 4vw, 42px);
+    border: 1px solid rgba(201,168,76,0.18);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, rgba(201,168,76,0.05) 0%, rgba(201,168,76,0.015) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.03),
+      0 20px 50px rgba(0,0,0,0.18);
+    overflow: hidden;
+  }
+
+  .dor-quote-mark {
+    position: absolute;
+    top: -8px;
+    left: 22px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    line-height: 1;
+    color: rgba(201,168,76,0.22);
+  }
+
+  .dor-quote-box p {
+    position: relative;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.7rem, 3.4vw, 2.7rem);
+    line-height: 1.38;
+    text-align: center;
+    color: #f2eadc;
+  }
+
+  .dor-quote-box strong {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .dor-quote-box span {
+    color: #d0ad54;
+    font-style: italic;
+  }
+
+  .dor-cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+  }
+
+  .dor-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 60px;
+    padding: 0 30px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #d8b552 0%, #c9a84c 100%);
+    color: #111111;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow:
+      0 10px 28px rgba(201,168,76,0.22),
+      inset 0 1px 0 rgba(255,255,255,0.28);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  }
+
+  .dor-cta:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 16px 34px rgba(201,168,76,0.28),
+      inset 0 1px 0 rgba(255,255,255,0.30);
+    filter: brightness(1.03);
+  }
+
+  @media (min-width: 768px) {
+    .dor-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .dor-card {
+      min-height: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .dor-section-premium {
+      padding: 68px 0;
+    }
+
+    .dor-card {
+      padding: 22px 18px;
+      border-radius: 16px;
+    }
+
+    .dor-card h3 {
+      font-size: 1.16rem;
+    }
+
+    .dor-card p {
+      font-size: 0.98rem;
+      line-height: 1.68;
+    }
+
+    .dor-quote-box {
+      border-radius: 18px;
+      padding: 24px 18px 22px;
+    }
+
+    .dor-quote-mark {
+      left: 14px;
+      font-size: 4rem;
+    }
+
+    .dor-quote-box p {
+      text-align: left;
+      font-size: clamp(1.45rem, 7vw, 2rem);
+      line-height: 1.42;
+    }
+
+    .dor-cta {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
+</style>
 </section>
 
 <!-- ════ RESULTADO ════ -->
