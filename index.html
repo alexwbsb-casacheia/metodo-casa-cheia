@@ -657,16 +657,7 @@ footer{
   background: linear-gradient(180deg, rgba(201,168,76,0.09) 0%, rgba(201,168,76,0.03) 100%);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
   max-width: min(420px, 100%);
-}
 
-.hero-pm-kicker span {
-  font-size: 0.72rem;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #c9a84c;
-  line-height: 1.3;
-  white-space: nowrap;
 }
 
 .hero-pm-kicker-sep {
@@ -836,7 +827,90 @@ footer{
     letter-spacing: 0.13em;
   }
 }
+   @media (max-width: 768px) {
+  nav {
+    padding: 12px 14px !important;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .nav-right {
+    min-width: 0;
+    gap: 8px !important;
+  }
+
+  .nav-btn {
+    padding: 10px 16px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.15 !important;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hero-pm-inner,
+  .hero-pm-kicker,
+  .hero-pm-h1,
+  .hero-pm-sub {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-pm-kicker {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    width: min(100%, 320px) !important;
+    margin: 0 auto !important;
+    padding: 12px 14px !important;
+    border-radius: 18px !important;
+    overflow: visible !important;
+  }
+
+  .hero-pm-kicker span {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 0.7rem !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0.07em !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .hero-pm-h1 {
+    font-size: clamp(2.45rem, 11vw, 4.2rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  .hero-pm-sub {
+    font-size: 0.98rem !important;
+    line-height: 1.72 !important;
+    max-width: 31ch !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-pm-kicker {
+    flex-direction: row !important;
+    width: auto !important;
+    max-width: 520px !important;
+    border-radius: 999px !important;
+    gap: 10px !important;
+  }
+
+  .hero-pm-kicker span {
+    width: auto !important;
+    white-space: nowrap !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.11em !important;
+  }
 </style>
+  
 </section>
 
 <style>
@@ -1726,6 +1800,242 @@ footer{
       line-height: 1.75;
     }
   }
+  /* =========================================
+   PATCH FINAL MOBILE — HERO + ANTES/DEPOIS
+   Cole no FINAL do último <style>
+   ========================================= */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+    min-width: 0 !important;
+  }
+
+  .nav-logo,
+  .nav-right {
+    min-width: 0 !important;
+  }
+
+  .nav-logo img {
+    height: 42px !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-btn {
+    padding: 10px 14px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .hero-pm,
+  .hero-pm-inner,
+  .hero-pm-kicker,
+  .hero-pm-h1,
+  .hero-pm-sub,
+  .transform-section,
+  .transform-section .wrap,
+  .transform-section .section-h,
+  .transform-grid,
+  .ba-card,
+  .ba-card span {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-pm {
+    padding: 42px 0 68px !important;
+  }
+
+  .hero-pm-inner {
+    width: min(100%, calc(100% - 24px)) !important;
+    gap: 24px !important;
+  }
+
+  .hero-pm-kicker {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    width: min(100%, 320px) !important;
+    margin: 0 auto !important;
+    padding: 12px 14px !important;
+    border-radius: 18px !important;
+    overflow: visible !important;
+  }
+
+  .hero-pm-kicker span {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 0.7rem !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0.07em !important;
+    white-space: normal !important;
+    text-overflow: unset !important;
+    overflow: visible !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .hero-pm-logo {
+    width: min(92px, 24vw) !important;
+    height: auto !important;
+  }
+
+  .hero-pm-h1 {
+    font-size: clamp(2.45rem, 11vw, 4.1rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.03em !important;
+    text-wrap: balance !important;
+  }
+
+  .hero-pm-sub {
+    font-size: 0.98rem !important;
+    line-height: 1.72 !important;
+    max-width: 31ch !important;
+    margin: 0 auto !important;
+    text-wrap: pretty !important;
+  }
+
+  .hero-pm-btn {
+    width: 100% !important;
+    max-width: 340px !important;
+    min-height: 58px !important;
+    padding: 0 20px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .hero-pm-meta {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    font-size: 0.78rem !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  .transform-section .wrap {
+    width: min(100%, calc(100% - 28px)) !important;
+  }
+
+  .transform-section .label-tag {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.11em !important;
+    line-height: 1.35 !important;
+  }
+
+  .transform-section .section-h {
+    font-size: clamp(2.35rem, 10.8vw, 4rem) !important;
+    line-height: 0.97 !important;
+    letter-spacing: -0.03em !important;
+    text-wrap: balance !important;
+  }
+
+  .transform-section img[alt*="Selo"],
+  .transform-section img[alt*="Método"] {
+    width: min(150px, 46vw) !important;
+    height: auto !important;
+  }
+
+  .before-after-header {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    margin-top: 20px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .ba-label.before {
+    display: none !important;
+  }
+
+  .before-after-header .ba-label.after,
+  .ba-label.after {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 12px 14px !important;
+    border-radius: 999px !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .transform-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .ba-card:not(.after-card) {
+    display: none !important;
+  }
+
+  .ba-card.after-card {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+    font-size: 0.92rem !important;
+    line-height: 1.58 !important;
+    overflow: visible !important;
+  }
+
+  .ba-card.after-card .ba-icon {
+    flex: 0 0 auto !important;
+    margin-top: 2px !important;
+  }
+
+  .ba-card.after-card span:last-child {
+    display: block !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    line-height: 1.58 !important;
+  }
+
+  .transform-cta p {
+    font-size: 0.92rem !important;
+    line-height: 1.65 !important;
+    max-width: 30ch !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .transform-cta .cta-primary {
+    width: 100% !important;
+    max-width: 340px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding-inline: 20px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-pm-kicker {
+    flex-direction: row !important;
+    width: auto !important;
+    max-width: 520px !important;
+    border-radius: 999px !important;
+    gap: 10px !important;
+  }
+
+  .hero-pm-kicker span {
+    width: auto !important;
+    white-space: nowrap !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.11em !important;
+  }
+}
 </style>
 </section>
 
