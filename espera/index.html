@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lista de Espera | Método Casa Cheia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#080808;color:#edeae3;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{max-width:560px;width:100%;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.22);border-radius:999px;padding:8px 20px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;margin-bottom:32px}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:#c9a84c;animation:blink 1.8s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.icon{font-size:2.6rem;margin-bottom:16px}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6.5vw,3.1rem);font-weight:700;line-height:1.08;color:#f5efe6;margin-bottom:12px}
+h1 em{color:#c9a84c;font-style:italic}
+.sub{font-size:1rem;line-height:1.75;color:rgba(255,255,255,.58);margin-bottom:32px;max-width:440px;margin-left:auto;margin-right:auto}
+.divider{width:56px;height:2px;background:linear-gradient(90deg,#c9a84c,transparent);margin:24px auto}
+.items{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;text-align:left}
+.item{display:flex;align-items:flex-start;gap:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:16px 18px}
+.item-arrow{color:#c9a84c;font-size:1rem;flex-shrink:0;margin-top:2px}
+.item p{font-size:.96rem;color:rgba(255,255,255,.65);line-height:1.65}
+.meta{font-size:.82rem;color:rgba(255,255,255,.24);line-height:1.6;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge"><span class="badge-dot"></span> Lista de espera</div>
+  <div class="icon">◈</div>
+  <h1>Ainda não é a hora.<br><em>E tudo bem.</em></h1>
+  <div class="divider"></div>
+  <p class="sub">Alguns negócios chegam até aqui antes do momento ideal. O que diferencia quem entra é saber usar esse tempo a favor.</p>
+  <div class="items">
+    <div class="item"><span class="item-arrow">→</span><p>Nossa equipe pode entrar em contato para entender melhor o seu momento e tirar qualquer dúvida que tenha ficado.</p></div>
+    <div class="item"><span class="item-arrow">→</span><p>Você vai receber acesso ao nosso grupo exclusivo no WhatsApp — com estratégias, conteúdo e suporte direto da equipe.</p></div>
+    <div class="item"><span class="item-arrow">→</span><p>Quando o momento certo chegar, você é o primeiro a saber. Quem está perto cresce junto.</p></div>
+  </div>
+  <p class="meta">Sem compromisso &bull; Acesso antecipado &bull; Próxima janela</p>
+</div>
+</body>
+</html>
