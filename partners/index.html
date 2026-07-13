@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Casa Cheia Partners — Parceiros de Crescimento</title>
+<meta name="description" content="Programa de parceiros do Método Casa Cheia™. Indique restaurantes com perfil, receba comissão de entrada e recorrência mensal." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9A84C; --gold-light:#E2C47A; --gold-dim:#8A6A28; --gold-pale:#F5EDD4;
+  --gold-glow:rgba(201,168,76,0.12); --gold-glow-lg:rgba(201,168,76,0.22);
+  --black:#090909; --black-card:#101010; --black-lift:#161616; --black-border:#1E1E1E; --black-border2:#2A2A2A;
+  --text:#EDEAE3; --text-muted:#8C8880; --text-faint:#3E3C39; --white:#FAF9F6; --red:#B83232;
+  --font-display:'Cormorant Garamond',Georgia,serif; --font-body:'Inter',system-ui,sans-serif;
+  --r-full:9999px; --r-lg:0.75rem; --r-xl:1rem; --r-2xl:1.5rem;
+  --sp2:0.5rem; --sp3:0.75rem; --sp4:1rem; --sp5:1.25rem; --sp6:1.5rem; --sp8:2rem; --sp10:2.5rem; --sp12:3rem; --sp16:4rem; --sp20:5rem; --sp24:6rem;
+  --ease:cubic-bezier(0.16,1,0.3,1); --t:200ms;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:1rem;background:var(--black);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.65}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 2rem;background:rgba(9,9,9,0.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--black-border)}
+.nav-logo{display:flex;align-items:center;gap:0.75rem;font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--gold);letter-spacing:0.06em}
+.nav-btn{background:var(--gold);color:var(--black);font-size:0.78rem;font-weight:700;letter-spacing:0.04em;padding:0.5rem 1.25rem;border-radius:var(--r-full);transition:background var(--t) var(--ease),transform var(--t) var(--ease);cursor:pointer}
+.nav-btn:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+.hero-pm{position:relative;overflow:hidden;padding:64px 0 88px;background:radial-gradient(circle at 50% 18%,rgba(201,168,76,0.11) 0%,transparent 46%)}
+.hero-pm-inner{width:min(1120px,calc(100% - 28px));margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}
+.hero-pm-kicker{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 8px;padding:12px 18px;border:1px solid rgba(201,168,76,0.22);border-radius:999px;background:linear-gradient(180deg,rgba(201,168,76,0.09) 0%,rgba(201,168,76,0.03) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);max-width:min(460px,100%)}
+.hero-pm-kicker span{font-size:0.82rem;letter-spacing:0.11em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.hero-pm-kicker-sep{color:rgba(201,168,76,0.4)}
+.hero-pm-h1{margin:0;font-family:var(--font-display);font-size:clamp(2.6rem,11.5vw,6.2rem);line-height:0.98;letter-spacing:-0.03em;color:#f5efe6;text-wrap:balance}
+.hero-pm-h1 em{display:block;margin-top:6px;color:var(--gold);font-style:italic;font-weight:500}
+.hero-pm-sub{margin:0;max-width:min(680px,100%);font-size:clamp(1rem,3.2vw,1.4rem);line-height:1.82;color:rgba(255,255,255,0.66)}
+.hero-pm-sub strong{color:#fff;font-weight:700}
+.hero-pm-cta-area{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
+.cta-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:min(380px,100%);min-height:62px;padding:0 28px;border-radius:999px;background:linear-gradient(180deg,#d8b552 0%,#c9a84c 100%);color:#111;font-size:clamp(1rem,3.5vw,1.1rem);font-weight:700;letter-spacing:0.01em;box-shadow:0 10px 30px rgba(201,168,76,0.22),inset 0 1px 0 rgba(255,255,255,0.28);transition:transform 180ms ease,box-shadow 180ms ease,filter 180ms ease;cursor:pointer}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(201,168,76,0.28),inset 0 1px 0 rgba(255,255,255,0.32);filter:brightness(1.04)}
+.hero-pm-meta{margin:0;font-size:clamp(0.74rem,2.2vw,0.9rem);color:rgba(255,255,255,0.28);line-height:1.5}
+
+section{padding:clamp(64px,8vw,96px) 24px}
+.wrap{max-width:1100px;margin:0 auto}
+.label-tag{font-size:0.84rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block}
+.section-h{font-family:var(--font-display);font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;line-height:1.05;color:#f5efe6;margin-bottom:1.5rem;text-wrap:balance}
+.section-h em{font-style:italic;color:var(--gold)}
+.gold-rule{width:56px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:2rem}
+.body-p{font-size:1.05rem;color:var(--text-muted);line-height:1.8;max-width:68ch;margin-bottom:1.2rem}
+.body-p strong{color:var(--text);font-weight:600}
+
+.section-alt{background:var(--black-card)}
+
+.grid2{display:grid;grid-template-columns:1fr;gap:16px;margin-top:2rem}
+@media(min-width:768px){.grid2{grid-template-columns:repeat(2,1fr)}}
+.card{position:relative;padding:24px 22px;border:1px solid rgba(255,255,255,0.06);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02) 0%,rgba(255,255,255,0.01) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.03),0 18px 40px rgba(0,0,0,0.16);transition:transform 180ms ease,border-color 180ms ease}
+.card:hover{transform:translateY(-2px);border-color:rgba(201,168,76,0.22)}
+
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.5rem}
+@media(min-width:768px){.stat-grid.cols3{grid-template-columns:repeat(3,1fr)}}
+.metric{background:var(--black-card);border:1px solid var(--black-border);border-radius:0.75rem;padding:1.5rem;text-align:center;position:relative;overflow:hidden;transition:border-color var(--t) var(--ease),transform var(--t) var(--ease)}
+.metric:hover{border-color:rgba(201,168,76,0.28);transform:translateY(-2px)}
+.metric.featured{background:linear-gradient(135deg,rgba(201,168,76,0.1) 0%,rgba(201,168,76,0.03) 100%);border-color:rgba(201,168,76,0.28)}
+.metric-num{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--gold);display:block;line-height:1;margin-bottom:0.5rem}
+.metric.featured .metric-num{font-size:clamp(2.5rem,5vw,4.2rem)}
+.metric-lbl{font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;line-height:1.4}
+
+.scarcity-box{position:relative;margin-top:0.5rem;padding:clamp(28px,4vw,42px);border:1px solid rgba(201,168,76,0.18);border-radius:22px;background:linear-gradient(180deg,rgba(201,168,76,0.06) 0%,rgba(201,168,76,0.015) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,0.03),0 20px 50px rgba(0,0,0,0.18)}
+.scarcity-box p{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.4;color:#f2eadc;margin:0}
+.scarcity-box strong{color:#fff;font-weight:700}
+.scarcity-box span.accent{color:var(--gold-light);font-style:italic}
+
+.criterios{display:flex;flex-direction:column;gap:0.75rem;text-align:left;margin-top:2rem}
+.criterio{display:flex;align-items:flex-start;gap:0.75rem;background:var(--black-card);border:1px solid var(--black-border);border-radius:0.5rem;padding:1rem 1.25rem;font-size:0.98rem;color:var(--text-muted);line-height:1.55;transition:border-color var(--t) var(--ease)}
+.criterio:hover{border-color:rgba(201,168,76,0.2)}
+.criterio-check{color:var(--gold);flex-shrink:0;font-size:1rem;margin-top:1px}
+
+.steps-wrap{margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem}
+.step-card{display:flex;gap:1.25rem;align-items:flex-start;padding:1.5rem 1.5rem;border-radius:1rem;background:var(--black-card);border:1px solid var(--black-border);transition:border-color var(--t) var(--ease),transform var(--t) var(--ease)}
+.step-card:hover{border-color:rgba(201,168,76,0.24);transform:translateY(-2px)}
+.step-num{width:44px;height:44px;border-radius:999px;background:linear-gradient(180deg,#d8b552 0%,#c9a84c 100%);color:#111;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 44px;font-family:var(--font-display);font-size:1.3rem}
+.step-title{font-weight:700;color:#fff;margin-bottom:4px;font-size:1.05rem}
+.step-desc{font-size:0.98rem;color:var(--text-muted);line-height:1.65}
+
+.inline-cta{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.18);border-radius:1rem;padding:2rem;text-align:center;margin-top:3rem}
+.inline-cta p{font-size:0.98rem;color:var(--text-muted);margin-bottom:1.25rem}
+
+.final-cta-section{position:relative;overflow:hidden;text-align:center;background:var(--black)}
+.final-cta-section::before{content:"";position:absolute;bottom:-200px;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 60%);pointer-events:none}
+.final-inner{max-width:720px;margin:0 auto;position:relative;z-index:1}
+.final-cta-area{display:flex;flex-direction:column;align-items:center;gap:1rem;margin-top:2.5rem}
+.cta-urgency{font-size:0.8rem;color:var(--text-faint);display:flex;align-items:center;gap:0.5rem}
+.cta-urgency-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.35}}
+
+footer{padding:3rem 1.5rem;border-top:1px solid var(--black-border);text-align:center}
+.footer-logo{font-family:var(--font-display);font-size:1.15rem;color:var(--gold);margin-bottom:0.5rem}
+.footer-sub{font-size:0.78rem;color:var(--text-faint);letter-spacing:0.05em;margin-bottom:1.5rem}
+.footer-copy{font-size:0.78rem;color:var(--text-faint);line-height:1.65;max-width:60ch;margin:0 auto}
+
+@media(max-width:768px){
+  nav{padding:12px 14px}
+  .nav-logo span{display:none}
+  section{padding:56px 18px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>Casa Cheia Partners</span></div>
+  <a href="#qualificacao" class="nav-btn">Quero ser parceiro</a>
+</nav>
+
+<section class="hero-pm">
+  <div class="hero-pm-inner">
+    <div class="hero-pm-kicker">
+      <span>Programa Exclusivo</span>
+      <span class="hero-pm-kicker-sep">·</span>
+      <span>Casa Cheia Partners</span>
+    </div>
+    <h1 class="hero-pm-h1">Parceiros de<br><em>Crescimento.</em></h1>
+    <p class="hero-pm-sub">Você não está indicando uma agência. Você está indicando <strong>caixa antecipado.</strong> Indique restaurantes com perfil para o Método Casa Cheia™, eu conduzo o fechamento, e você recebe comissão de entrada + recorrência mensal.</p>
+    <div class="hero-pm-cta-area">
+      <a href="#qualificacao" class="cta-primary">Quero ser parceiro</a>
+      <p class="hero-pm-meta">Vagas limitadas · Condição especial para os primeiros 10 contratos</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <span class="label-tag">O Método</span>
+    <h2 class="section-h">Por que isso<br><em>converte.</em></h2>
+    <div class="gold-rule"></div>
+    <p class="body-p">O Método Casa Cheia™ não é agência, não é gestor de tráfego e não é promessa vaga de marketing. É um sistema de <strong>receita antecipada</strong> para restaurantes, que transforma demanda futura em caixa hoje, antes do cliente chegar.</p>
+    <p class="body-p">Isso muda completamente a conversa do parceiro com o decisor: em vez de vender visibilidade, você apresenta uma oferta comercial concreta, urgente e fácil de justificar — o que reduz objeção e acelera o fechamento na call.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label-tag">A Oferta</span>
+    <h2 class="section-h">Proposta da<br><em>parceria.</em></h2>
+    <div class="gold-rule"></div>
+    <div class="stat-grid">
+      <div class="metric featured"><span class="metric-num">R$ 1.000</span><span class="metric-lbl">Por contrato fechado, assinado e pago</span></div>
+      <div class="metric featured"><span class="metric-num">10%</span><span class="metric-lbl">Do fixo mensal, por até 3 meses</span></div>
+    </div>
+    <p class="body-p" style="margin-top:2rem">No modelo atual, 10% do fixo mensal representa <strong>R$ 250 por mês</strong>, por cliente ativo, enquanto ele permanecer adimplente.</p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <span class="label-tag">Atenção</span>
+    <h2 class="section-h">Condição<br><em>especial.</em></h2>
+    <div class="gold-rule"></div>
+    <div class="scarcity-box">
+      <p>Essa condição vale <strong>somente para os primeiros 10 contratos.</strong> Depois disso, os parceiros continuam no programa, mas recebem <span class="accent">uma nova proposta de continuidade</span> — pensada para ampliar valor e manter a parceria viva no longo prazo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label-tag">Filtro de Entrada</span>
+    <h2 class="section-h">Perfil ideal do<br><em>restaurante.</em></h2>
+    <div class="gold-rule"></div>
+    <p class="body-p">Antes de indicar, confirme se o restaurante tem fit real com o método:</p>
+    <div class="criterios">
+      <div class="criterio"><span class="criterio-check">✓</span> Fatura a partir de R$ 30 mil por mês</div>
+      <div class="criterio"><span class="criterio-check">✓</span> Tem produto com apelo e espaço para oferta forte</div>
+      <div class="criterio"><span class="criterio-check">✓</span> Aceita investir em tráfego pago</div>
+      <div class="criterio"><span class="criterio-check">✓</span> Tem estrutura para absorver mais fluxo</div>
+      <div class="criterio"><span class="criterio-check">✓</span> Tem dono presente e decisão rápida</div>
+      <div class="criterio"><span class="criterio-check">✓</span> Está aberto a testar ofertas e crescer com previsibilidade</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <span class="label-tag">Prova Financeira</span>
+    <h2 class="section-h">Quanto você pode<br><em>ganhar.</em></h2>
+    <div class="gold-rule"></div>
+    <div class="stat-grid cols3">
+      <div class="metric"><span class="metric-num">R$ 1.750</span><span class="metric-lbl">1 contrato fechado</span></div>
+      <div class="metric"><span class="metric-num">R$ 5.250</span><span class="metric-lbl">3 contratos fechados</span></div>
+      <div class="metric"><span class="metric-num">R$ 17.500</span><span class="metric-lbl">10 contratos fechados</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label-tag">Como Funciona</span>
+    <h2 class="section-h">Próximo<br><em>passo.</em></h2>
+    <div class="gold-rule"></div>
+    <div class="steps-wrap">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div><div class="step-title">Receba as informações</div><div class="step-desc">Você recebe o material completo do Método Casa Cheia para apresentar com segurança.</div></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div><div class="step-title">Apresente e agende</div><div class="step-desc">Conversa com o dono ou decisor do restaurante e, se houver fit, agenda a call comigo pelo Calendly. Você pode acompanhar o fechamento.</div></div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div><div class="step-title">Receba sua comissão</div><div class="step-desc">Após o fechamento, o contrato é assinado, a entrada é paga e você entra na recorrência mensal enquanto o cliente estiver ativo.</div></div>
+      </div>
+    </div>
+    <div class="inline-cta">
+      <p>Quanto mais informações você trouxer sobre o restaurante indicado, maior a chance de fechamento.</p>
+      <a href="#qualificacao" class="cta-primary" style="margin:0 auto">Quero ser parceiro</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta-section" id="qualificacao">
+  <div class="wrap final-inner">
+    <span class="label-tag">Casa Cheia Partners</span>
+    <h2 class="section-h">Casa cheia não é sorte.<br><em>É método.</em></h2>
+    <div class="gold-rule" style="margin:0 auto 2rem"></div>
+    <p class="body-p" style="margin:0 auto 1rem;text-align:center">Se você tem acesso a restaurantes com potencial real e quer transformar indicação em receita recorrente, preencha o formulário de qualificação. Parceiros aprovados entram no programa.</p>
+    <div class="final-cta-area">
+      <a href="#" class="cta-primary">Quero ser parceiro agora</a>
+      <div class="cta-urgency"><span class="cta-urgency-dot"></span> Vagas limitadas — condição válida apenas para os primeiros 10 contratos</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Casa Cheia Partners</div>
+  <div class="footer-sub">Parceiros de Crescimento · Método Casa Cheia™</div>
+  <div class="footer-copy">Programa de indicação exclusivo do Método Casa Cheia™. Comissões pagas mediante contrato assinado e pago pelo restaurante indicado.</div>
+</footer>
+
+</body>
+</html>
