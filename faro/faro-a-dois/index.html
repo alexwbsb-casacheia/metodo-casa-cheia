@@ -3,137 +3,197 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#000000">
 <title>Faro a Dois | 2 pratos + Petit Gâteau por R$ 197</title>
 <meta name="description" content="Faro a Dois: 2 pratos principais (Taglio de Alcatra ou Carbonara) + Petit Gâteau para dividir. Por apenas R$ 197. Menos de R$ 100 por pessoa.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--green:#30705b;--deep:#303c3c;--night:#1f2828;--gold:#997429;--gold-light:#d9b46a;--gold-pale:#f3dfae;--ivory:#f5f2ea;--paper:#fffdf8;--ink:#263131;--muted:#5d6866;--line:#ddd7c8;--shadow:0 12px 35px rgba(31,40,40,.12)}
+:root{
+  --black:#000;--coal:#0a0b0b;--panel:#121514;--panel2:#171b1a;
+  --text:#d5d5d5;--white:#fff;--beige:#e3cfb9;--bronze:#957b5f;--gold:#997429;--gold-l:#c9a46a;
+  --green:#30705b;--green-d:#303c3c;--line:rgba(227,207,185,.22)
+}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:'Work Sans',Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--black);color:var(--text);font-family:Montserrat,Arial,sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
-.wrap{width:min(100% - 32px,1120px);margin:auto}
-.hero{background:linear-gradient(150deg,var(--night) 0%,var(--deep) 55%,#2c5a4b 100%);color:#fff;padding:18px 0 40px;position:relative;overflow:hidden}
-.hero:after{content:'FARO';position:absolute;right:-30px;top:20px;color:rgba(217,180,106,.07);font:900 120px/1 'Work Sans',sans-serif;letter-spacing:.06em;transform:rotate(-12deg)}
-.brand,.hero-grid{position:relative;z-index:1}
-.brand{text-align:center;margin-bottom:18px;line-height:1}
-.brand b{display:block;font:800 30px/1 'Work Sans',sans-serif;letter-spacing:.32em;color:var(--gold-light);padding-left:.32em}
-.brand small{display:block;font-size:9px;letter-spacing:.5em;color:#cfd8d4;margin-top:6px;padding-left:.5em}
-.brand img{max-height:56px;width:auto}
-.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 12px,rgba(255,255,255,.02) 12px 24px);border:2px dashed rgba(217,180,106,.55);color:var(--gold-pale);font-size:13px;font-weight:600;padding:16px;line-height:1.4}
-.ph small{display:block;font-weight:400;color:#cfd8d4;margin-top:4px}
-.hero-photo{border-radius:12px;overflow:hidden;aspect-ratio:1/1;margin:0 0 6px}
-.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--gold-light);font-size:11px;font-weight:700;margin:22px 0 8px}
-.hero h1{font:900 clamp(46px,13vw,84px)/.92 'Work Sans',sans-serif;letter-spacing:-.01em;margin:0 0 14px;text-transform:uppercase}
-.hero h1 span{color:var(--gold-light)}
-.sub1{font-size:17px;font-weight:600;color:#eef2ef;margin:0 0 14px;line-height:1.4}
-.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.price .from{font-size:14px;color:#b9c4c0;text-decoration:line-through}
-.price .now{font:900 46px/1 'Work Sans',sans-serif;color:var(--gold-light)}
-.sub2{font-size:15px;font-weight:700;color:var(--gold-pale);margin:6px 0 0}
-.badges{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
-.badge{border:1px solid rgba(217,180,106,.35);border-radius:8px;padding:11px 10px;font-size:11px;color:#dfe6e2;background:rgba(0,0,0,.12)}
-.badge b{display:block;color:var(--gold-light);font:800 17px/1.15 'Work Sans',sans-serif}
-.badge.hot{border-color:var(--gold-light);background:rgba(153,116,41,.22)}
-.cta-wrap{position:relative;display:block;margin:24px 0 0}
-.cta-wrap:before{content:"";position:absolute;inset:-10px;border-radius:18px;background:rgba(217,180,106,.18);animation:ctaHalo 2s ease-out infinite;pointer-events:none}
-.btn{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:62px;margin:0;padding:20px 18px;background:linear-gradient(135deg,var(--gold-pale),var(--gold-light));color:var(--night);border:1px solid #fff0c8;border-radius:12px;box-shadow:0 7px 0 #7a5a1c,0 16px 28px rgba(0,0,0,.3);font-size:14px;font-weight:800;letter-spacing:.045em;line-height:1.25;text-align:center;text-transform:uppercase;transition:transform .2s ease,box-shadow .2s ease;animation:ctaBreath 2.4s ease-in-out infinite}
-.btn:after{content:'→';font-size:22px;line-height:1}
-.btn:hover{transform:translateY(-3px) scale(1.015);box-shadow:0 10px 0 #7a5a1c,0 20px 34px rgba(0,0,0,.35)}
-.btn:active{transform:translateY(4px);box-shadow:0 3px 0 #7a5a1c,0 8px 16px rgba(0,0,0,.25)}
-.validity{display:block;position:relative;z-index:2;margin:18px 0 0;padding:0 10px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--muted)}
-.hero .validity{color:#cfd8d4}
-.section{padding:44px 0}
-.section h2{font:800 30px/1.08 'Work Sans',sans-serif;margin:0 0 12px;color:var(--deep);letter-spacing:-.01em}
-.section h3{font:700 20px/1.15 'Work Sans',sans-serif;margin:16px 0 6px;color:var(--deep)}
-.section p{color:#4c5856;margin:8px 0}
-.lead{font-size:16px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:18px;margin:16px 0;box-shadow:var(--shadow)}
-.feature{min-height:230px;border-radius:8px;overflow:hidden}
-.feature img{width:100%;height:100%;object-fit:cover;display:block}
-.feature.ph{background:repeating-linear-gradient(135deg,#eef1ec 0 12px,#e6eae4 12px 24px);border-color:#b9a77d;color:var(--deep)}
-.feature.ph small{color:var(--muted)}
-.items{display:grid;gap:14px}
-.tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-top:12px}
-.anchor-price{background:var(--deep);color:#fff;border-radius:12px;padding:20px;margin:22px 0 4px;text-align:center}
-.anchor-price .from{color:#b9c4c0;text-decoration:line-through;font-size:15px}
-.anchor-price .now{display:block;font:900 40px/1.05 'Work Sans',sans-serif;color:var(--gold-light);margin:4px 0}
-.anchor-price p{color:#dfe6e2;margin:6px 0 0;font-size:14px}
-.scarcity{display:flex;gap:10px;align-items:center;background:#fbf0d9;border:1px solid #e7cf98;border-radius:10px;padding:14px 16px;margin:16px 0 0;font-weight:700;color:#5a4314;font-size:14px}
-.scarcity i{font-style:normal;font-size:20px}
-.steps{display:grid;gap:15px}
-.step{display:grid;grid-template-columns:46px 1fr;gap:13px}
-.num{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:13px;font-weight:800}
-.step h3{margin-top:4px}
-.rules{background:#e9eeea}
-.rules ul{padding-left:20px;margin:6px 0}
-.rules li{margin:9px 0;color:#4c5856;font-size:14px}
-.footer{background:var(--night);color:#fff;padding:30px 0;font-size:12px}
-.footer p{margin:6px 0;color:#cfd8d4}
-.footer p:first-child{color:var(--gold-light);font-weight:700}
-.mobile-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(31,40,40,.97);padding:10px 16px;border-top:1px solid rgba(217,180,106,.4);z-index:999}
+img{display:block;max-width:100%}
+.wrap{width:min(100% - 36px,1080px);margin:auto}
+.label{font-family:Montserrat,sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--beige);font-weight:500}
+.lined{border-left:1px solid var(--line);padding-left:18px;position:relative}
+.lined:before{content:"";position:absolute;left:-1px;top:22px;width:2px;height:58px;background:var(--white)}
+
+/* ---------- placeholders de imagem ---------- */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(135deg,#111413 0 14px,#0c0e0d 14px 28px);border:1px dashed rgba(227,207,185,.45);color:var(--beige);font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:16px}
+.ph small{display:block;letter-spacing:.06em;text-transform:none;color:#9aa19f;margin-top:6px;font-size:12px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--black);color:var(--white);overflow:hidden}
+.hero-bg{position:relative;height:62vh;min-height:380px;max-height:620px}
+.hero-bg .ph,.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.35) 70%,#000 100%)}
+.brand{position:absolute;top:22px;left:0;right:0;z-index:2;text-align:center;line-height:1}
+.brand b{display:block;font-weight:400;font-size:24px;letter-spacing:.55em;padding-left:.55em;color:var(--white)}
+.brand small{display:block;font-family:'Work Sans',sans-serif;font-size:9px;letter-spacing:.6em;padding-left:.6em;color:var(--beige);margin-top:8px}
+.brand img{max-height:54px;width:auto;margin:auto}
+.hero-content{position:relative;z-index:2;margin-top:-120px;padding-bottom:46px}
+.hero h1{font-weight:600;font-size:clamp(46px,14vw,92px);line-height:.95;letter-spacing:.1em;text-transform:uppercase;margin:14px 0 18px}
+.hero h1 span{display:block;color:var(--gold-l);font-weight:300}
+.sub1{font-size:16px;font-weight:500;color:var(--white);margin:0 0 18px;line-height:1.45;letter-spacing:.02em}
+.price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.price .from{font-size:14px;color:#8d9391;text-decoration:line-through;letter-spacing:.06em}
+.price .now{font-weight:600;font-size:52px;line-height:1;color:var(--gold-l);letter-spacing:.02em}
+.sub2{font-size:14px;font-weight:600;color:var(--beige);margin:8px 0 0;letter-spacing:.04em}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+.badge{border:1px solid var(--line);padding:12px 12px;font-size:11px;color:#b9bfbd;letter-spacing:.03em}
+.badge b{display:block;color:var(--white);font-weight:600;font-size:15px;letter-spacing:.04em;margin-bottom:2px}
+.badge.hot{border-color:var(--gold-l);background:rgba(153,116,41,.14)}
+.badge.hot b{color:var(--gold-l)}
+
+/* ---------- CTA ---------- */
+.cta-wrap{position:relative;display:block;margin:26px 0 0}
+.cta-wrap:before{content:"";position:absolute;inset:-9px;border-radius:6px;background:rgba(201,164,106,.16);animation:ctaHalo 2s ease-out infinite;pointer-events:none}
+.btn{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:62px;padding:20px 18px;background:linear-gradient(135deg,var(--beige),var(--gold-l));color:#0b0b0b;border-radius:3px;box-shadow:0 6px 0 #6e5320,0 16px 30px rgba(0,0,0,.55);font-family:Montserrat,sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.14em;line-height:1.25;text-align:center;text-transform:uppercase;transition:transform .2s ease,box-shadow .2s ease;animation:ctaBreath 2.4s ease-in-out infinite}
+.btn:after{content:'→';font-size:20px;line-height:1;letter-spacing:0}
+.btn:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 9px 0 #6e5320,0 20px 34px rgba(0,0,0,.6)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #6e5320,0 8px 16px rgba(0,0,0,.4)}
+.validity{display:block;position:relative;z-index:2;margin:18px 0 0;padding:0 10px;text-align:center;font-size:11.5px;line-height:1.5;color:#8d9391;letter-spacing:.03em}
+
+/* ---------- SEÇÕES ---------- */
+.section{padding:56px 0}
+.section.alt{background:var(--coal)}
+.section h2{font-weight:400;font-size:25px;line-height:1.3;letter-spacing:.08em;color:var(--white);margin:12px 0 14px}
+.section h3{font-weight:500;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--white);margin:14px 0 6px}
+.section p{color:var(--text);margin:10px 0;font-size:15px}
+.lead{color:var(--beige)!important}
+.items{display:grid;gap:18px;margin-top:22px}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.06);padding:0 0 20px}
+.card .feature{aspect-ratio:4/3;overflow:hidden}
+.card .feature img{width:100%;height:100%;object-fit:cover}
+.card .card-body{padding:4px 20px 0}
+.card .label{display:block;margin-top:16px;color:var(--bronze)}
+.card p{font-size:14px;color:#b9bfbd}
+.pick{margin-top:18px;color:var(--white)!important;font-weight:600;letter-spacing:.04em}
+.anchor{border:1px solid var(--gold);background:linear-gradient(160deg,#141210,#0b0a09);padding:26px 20px;margin:26px 0 0;text-align:center}
+.anchor .from{color:#8d9391;text-decoration:line-through;font-size:14px;letter-spacing:.08em}
+.anchor .now{display:block;font-weight:600;font-size:40px;line-height:1.1;color:var(--gold-l);margin:6px 0}
+.anchor p{color:var(--beige);margin:6px 0 0;font-size:14px}
+.scarcity{display:flex;gap:12px;align-items:center;border:1px solid rgba(201,164,106,.5);padding:14px 16px;margin:16px 0 0;font-weight:600;color:var(--beige);font-size:13.5px;letter-spacing:.04em}
+.scarcity i{font-style:normal;font-size:18px}
+
+/* galeria do espaço */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:22px}
+.gallery .ph,.gallery img{aspect-ratio:3/4;width:100%;object-fit:cover}
+.review{margin-top:22px}
+.review .ph{min-height:220px}
+
+/* passos */
+.steps{display:grid;gap:18px;margin-top:22px}
+.step{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}
+.num{width:46px;height:46px;border:1px solid var(--green);background:rgba(48,112,91,.22);display:grid;place-items:center;color:var(--white);font-size:12px;font-weight:600;letter-spacing:.08em}
+.step h3{margin-top:6px;font-size:15px}
+.step p{margin:4px 0;font-size:14px}
+
+/* regras */
+.rules{background:var(--coal)}
+.rule-block{border-top:1px solid rgba(255,255,255,.08);padding:18px 0 4px}
+.rule-block:first-of-type{border-top:0}
+.rule-block h3{font-size:13px;letter-spacing:.2em;color:var(--beige);margin:0 0 6px}
+.rules ul{padding-left:18px;margin:6px 0}
+.rules li{margin:9px 0;color:#c4c9c7;font-size:14px;line-height:1.55}
+.rules li b{color:var(--white);font-weight:600}
+.note{font-size:12.5px;color:#8d9391;margin-top:16px}
+
+/* rodapé */
+.footer{background:#000;border-top:1px solid rgba(255,255,255,.08);padding:34px 0 30px;font-size:12.5px;text-align:center;letter-spacing:.06em}
+.footer p{margin:7px 0;color:#b9bfbd}
+.footer .fb{font-weight:400;letter-spacing:.5em;padding-left:.5em;color:var(--white);font-size:16px;margin-bottom:14px}
+.footer h4{font-weight:500;color:var(--white);font-size:12px;letter-spacing:.14em;margin:18px 0 6px;text-transform:uppercase}
+
+/* barra fixa mobile */
+.mobile-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,.94);backdrop-filter:blur(6px);padding:10px 16px;border-top:1px solid rgba(201,164,106,.35);z-index:999}
 .mobile-bar .cta-wrap{margin:0}
-.mobile-bar .btn{min-height:58px;font-size:12.5px}
-.spacer{height:106px}
-@keyframes ctaBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.022)}}
-@keyframes ctaHalo{0%{opacity:.65;transform:scale(.92)}70%,100%{opacity:0;transform:scale(1.12)}}
+.mobile-bar .btn{min-height:56px;font-size:12px}
+.spacer{height:100px}
+
+@keyframes ctaBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+@keyframes ctaHalo{0%{opacity:.65;transform:scale(.94)}70%,100%{opacity:0;transform:scale(1.1)}}
 @media(prefers-reduced-motion:reduce){.btn,.cta-wrap:before{animation:none}}
-@media(min-width:760px){.wrap{width:min(100% - 64px,1120px)}.hero{padding:25px 0 60px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center}.hero-photo{aspect-ratio:4/3}.items{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.section{padding:70px 0}.card{padding:28px}.mobile-bar,.spacer{display:none}}
+@media(min-width:760px){
+  .wrap{width:min(100% - 64px,1080px)}
+  .hero-bg{height:70vh;max-height:720px}
+  .hero-content{margin-top:-220px;max-width:640px}
+  .items{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .gallery{gap:10px}
+  .section{padding:84px 0}
+  .section h2{font-size:30px}
+  .mobile-bar,.spacer{display:none}
+}
 </style>
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero"><div class="wrap hero-grid">
-<div>
-  <div class="brand"><b>FARO</b><small>RESTAURANTE</small></div>
-  <div class="hero-photo ph">FOTO PRINCIPAL<small>Mesa para dois no Faro · enviar arquivo</small></div>
-</div>
-<div>
-  <div class="eyebrow">Voucher do casal · Terça a quinta</div>
-  <h1>Faro <span>a Dois</span></h1>
-  <p class="sub1">2 pratos principais (Taglio de Alcatra ou Carbonara) + Petit Gâteau para dividir</p>
-  <div class="price"><span class="from">De R$ 233</span><span class="now">R$ 197</span></div>
-  <p class="sub2">Por apenas R$ 197. Menos de R$ 100 por pessoa.</p>
-  <div class="badges">
-    <div class="badge"><b>Terça a quinta</b>almoço e jantar</div>
-    <div class="badge"><b>2 pessoas</b>2 pratos + sobremesa</div>
-    <div class="badge"><b>Menos de R$ 100</b>por pessoa</div>
-    <div class="badge hot"><b>Apenas 50</b>vouchers disponíveis</div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg">
+    <!-- trocar pelo arquivo: <img src="assets/hero-faro.webp" alt="Mesa para dois no Faro"> -->
+    <div class="ph">FOTO DE FUNDO<small>Ambiente do Faro à noite · enviar arquivo</small></div>
+    <div class="brand"><b>FARO</b><small>RESTAURANTE</small></div>
   </div>
-  <div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher</a></div>
-  <div class="validity">Voucher válido por 30 dias após a compra. Não precisa de reserva.</div>
-</div>
-</div></section>
+  <div class="wrap hero-content">
+    <div class="label">Voucher do casal · Terça a quinta</div>
+    <h1>Faro<span>a Dois</span></h1>
+    <p class="sub1">2 pratos principais (Taglio de Alcatra ou Carbonara) + Petit Gâteau para dividir</p>
+    <div class="price"><span class="from">De R$ 233</span><span class="now">R$ 197</span></div>
+    <p class="sub2">Por apenas R$ 197. Menos de R$ 100 por pessoa.</p>
+    <div class="badges">
+      <div class="badge"><b>Terça a quinta</b>almoço e jantar</div>
+      <div class="badge"><b>2 pessoas</b>2 pratos + sobremesa</div>
+      <div class="badge"><b>Menos de R$ 100</b>por pessoa</div>
+      <div class="badge hot"><b>Apenas 50</b>vouchers disponíveis</div>
+    </div>
+    <div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher</a></div>
+    <div class="validity">Voucher válido por 30 dias após a compra. Não precisa de reserva.</div>
+  </div>
+</section>
 
-<!-- O QUE VEM -->
-<section class="section"><div class="wrap">
-  <h2>Já conhece o Faro? Então sabe que é o tipo de lugar que pede companhia.</h2>
-  <p class="lead">Ainda não conhece? Essa é a desculpa perfeita para ir a dois.</p>
+<!-- ================= O QUE VEM ================= -->
+<section class="section alt"><div class="wrap">
+  <div class="lined">
+    <div class="label">Faro a Dois</div>
+    <h2>Já conhece o Faro? Então sabe que é o tipo de lugar que pede companhia.</h2>
+    <p class="lead">Ainda não conhece? Essa é a desculpa perfeita para ir a dois.</p>
+  </div>
   <p>Com o voucher Faro a Dois, o casal escolhe 2 pratos principais entre os mais pedidos da casa e fecha a experiência com o Petit Gâteau feito na hora, para dividir.</p>
   <div class="items">
     <div class="card">
       <div class="feature ph">FOTO DO PRATO<small>Taglio de Alcatra · enviar arquivo</small></div>
-      <span class="tag">Prato principal</span>
-      <h3>Taglio de Alcatra</h3>
-      <p>Linguine ao pomodoro com o miolo da alcatra cortado em cubos, finalizado com crispy de manjericão.</p>
+      <div class="card-body">
+        <span class="label">Prato principal</span>
+        <h3>Taglio de Alcatra</h3>
+        <p>Linguine ao pomodoro com o miolo da alcatra cortado em cubos, finalizado com crispy de manjericão.</p>
+      </div>
     </div>
     <div class="card">
       <div class="feature ph">FOTO DO PRATO<small>Carbonara · enviar arquivo</small></div>
-      <span class="tag">Prato principal</span>
-      <h3>Carbonara</h3>
-      <p>A carbonara da casa, entre os pratos mais pedidos pelos casais.</p>
+      <div class="card-body">
+        <span class="label">Prato principal</span>
+        <h3>Carbonara</h3>
+        <p>A carbonara da casa, entre os pratos mais pedidos pelos casais.</p>
+      </div>
     </div>
     <div class="card">
       <div class="feature ph">FOTO DA SOBREMESA<small>Petit Gâteau · enviar arquivo</small></div>
-      <span class="tag">Sobremesa para dividir</span>
-      <h3>Petit Gâteau</h3>
-      <p>Chocolate nobre com macadâmia triturada e sorvete de baunilha. Feito na hora.</p>
+      <div class="card-body">
+        <span class="label">Sobremesa para dividir</span>
+        <h3>Petit Gâteau</h3>
+        <p>Chocolate nobre com macadâmia triturada e sorvete de baunilha. Feito na hora.</p>
+      </div>
     </div>
   </div>
-  <p><b>Escolham 2 iguais ou 1 de cada.</b></p>
-  <div class="anchor-price">
+  <p class="pick">Escolham 2 iguais ou 1 de cada.</p>
+  <div class="anchor">
     <span class="from">De R$ 233</span>
     <span class="now">R$ 197 o casal</span>
     <p>Menos de R$ 100 por pessoa num dos restaurantes mais bonitos de Brasília.</p>
@@ -143,46 +203,114 @@ a{text-decoration:none;color:inherit}
   <div class="validity">Voucher válido por 30 dias após a compra.</div>
 </div></section>
 
-<!-- PROVA SOCIAL -->
-<section class="section" style="padding-top:0"><div class="wrap">
-  <h2>A experiência Faro, na voz de quem já veio</h2>
-  <div class="card"><div class="feature ph">PRINT DE AVALIAÇÃO REAL<small>Avaliação do Google · enviar arquivo</small></div></div>
+<!-- ================= O ESPAÇO ================= -->
+<section class="section"><div class="wrap">
+  <div class="lined">
+    <div class="label">O espaço</div>
+    <h2>Um oásis no coração do Sudoeste.</h2>
+  </div>
+  <div class="gallery">
+    <div class="ph">FOTO<small>Ambiente</small></div>
+    <div class="ph">FOTO<small>Mesa</small></div>
+    <div class="ph">FOTO<small>Piscina</small></div>
+  </div>
+  <div class="review">
+    <div class="label">Na voz de quem já veio</div>
+    <div class="ph" style="margin-top:14px">PRINT DE AVALIAÇÃO REAL<small>Avaliação do Google · enviar arquivo</small></div>
+  </div>
   <div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher agora</a></div>
   <div class="validity">Voucher válido por 30 dias após a compra.</div>
 </div></section>
 
-<!-- COMO FUNCIONA -->
-<section class="section" style="padding-top:0"><div class="wrap">
-  <h2>Como funciona</h2>
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section alt"><div class="wrap">
+  <div class="lined">
+    <div class="label">Simples assim</div>
+    <h2>Como funciona</h2>
+  </div>
   <div class="steps">
     <div class="step"><div class="num">01</div><div><h3>Garanta seu voucher</h3><p>Finalize a compra online, em poucos minutos.</p></div></div>
-    <div class="step"><div class="num">02</div><div><h3>Receba o QR Code</h3><p>Ele chega no seu WhatsApp e no seu e-mail.</p></div></div>
-    <div class="step"><div class="num">03</div><div><h3>Apresente e aproveite</h3><p>Mostre o QR Code no Faro, de terça a quinta, no almoço ou no jantar.</p></div></div>
+    <div class="step"><div class="num">02</div><div><h3>Receba o QR Code</h3><p>Ele chega no seu WhatsApp e no seu e-mail assim que o pagamento é confirmado.</p></div></div>
+    <div class="step"><div class="num">03</div><div><h3>Apresente e aproveite</h3><p>Mostre o QR Code ao chegar ao Faro, de terça a quinta, no almoço ou no jantar.</p></div></div>
   </div>
   <div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher</a></div>
   <div class="validity">Voucher válido por 30 dias após a compra. Não precisa de reserva.</div>
 </div></section>
 
-<!-- REGRAS -->
+<!-- ================= REGRAS ================= -->
 <section class="section rules"><div class="wrap">
-  <h2>Regras importantes</h2>
-  <div class="card">
+  <div class="lined">
+    <div class="label">Antes de comprar</div>
+    <h2>Regras importantes</h2>
+  </div>
+
+  <div class="rule-block">
     <h3>O que está incluso</h3>
-    <ul><li>2 pratos principais: Taglio de Alcatra ou Carbonara (2 iguais ou 1 de cada).</li><li>1 Petit Gâteau para dividir.</li></ul>
+    <ul>
+      <li><b>2 pratos principais</b>, à escolha: Taglio de Alcatra ou Carbonara (2 iguais ou 1 de cada).</li>
+      <li><b>1 Petit Gâteau</b> para o casal dividir.</li>
+      <li>Voucher válido para <b>2 pessoas</b>.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
     <h3>O que não está incluso</h3>
-    <ul><li>Bebidas e taxa de serviço.</li><li>Outros pratos ou adicionais.</li></ul>
-    <h3>Regras de compra e uso do voucher</h3>
-    <ul><li>Válido de terça a quinta, no almoço e no jantar.</li><li>Válido para duas pessoas, em uma única visita.</li><li>Não precisa de reserva.</li><li>Não válido em feriados, vésperas de feriado e datas comemorativas.</li><li>Oferta limitada a 50 vouchers.</li></ul>
+    <ul>
+      <li>Bebidas, entradas, couvert e outras sobremesas.</li>
+      <li>Outros pratos ou adicionais. Tudo o que for pedido além do voucher é pago à parte, no restaurante.</li>
+      <li>Taxa de serviço de 10%, cobrada no restaurante.</li>
+      <li>Não é possível trocar os pratos do voucher por outros itens do cardápio.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Dias e horários de uso</h3>
+    <ul>
+      <li>Válido de <b>terça a quinta-feira</b>, no almoço (12h às 15h) e no jantar (19h às 23h).</li>
+      <li>Não válido às sextas, sábados e domingos. O Faro não abre às segundas.</li>
+      <li>Não válido em <b>feriados, vésperas de feriado e datas comemorativas</b> (como Dia dos Namorados, Dia das Mães, Natal e Réveillon).</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Como usar o voucher</h3>
+    <ul>
+      <li>Apresente o QR Code (no celular ou impresso) <b>ao chegar, antes de fazer o pedido</b>.</li>
+      <li>Uso único: válido para duas pessoas, em uma única visita. Não pode ser dividido em visitas diferentes.</li>
+      <li><b>Não precisa de reserva</b>. O atendimento segue a disponibilidade de mesas no momento da chegada.</li>
+      <li>Dois casais que queiram dividir a mesma mesa precisam fazer reserva com antecedência.</li>
+      <li>O voucher não pode ser trocado por dinheiro.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Compra e disponibilidade</h3>
+    <ul>
+      <li>Oferta limitada a <b>50 vouchers</b>. Encerrada a quantidade, a oferta sai do ar.</li>
+      <li>O voucher é enviado por WhatsApp e e-mail após a confirmação do pagamento.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
     <h3>Validade e política de cancelamento</h3>
-    <ul><li>Válido por 30 dias após a compra.</li><li>Cancelamento em até 7 dias, se não utilizado.</li></ul>
+    <ul>
+      <li>O voucher é válido por <b>30 dias a partir da data da compra</b>. Depois desse prazo, não poderá ser utilizado.</li>
+      <li><b>Cancelamento:</b> você pode cancelar a compra em até <b>7 dias após a compra</b>, desde que o voucher <b>não tenha sido utilizado</b>. Nesse caso, o valor é devolvido integralmente.</li>
+      <li>Vouchers já utilizados não podem ser cancelados.</li>
+      <li>Para cancelar, fale com o suporte pelo WhatsApp informado abaixo.</li>
+    </ul>
   </div>
 </div></section>
 
+<!-- ================= RODAPÉ ================= -->
 <footer class="footer"><div class="wrap">
+  <p class="fb">FARO</p>
   <p>@faro.restaurante</p>
-  <p>Suporte: [WhatsApp e e-mail a confirmar]</p>
-  <p>Sudoeste, Brasília - DF · [endereço completo a confirmar]</p>
-  <p>© 2026 Faro Restaurante.</p>
+  <h4>Endereço</h4>
+  <p>Ao lado da Academia Unique · Sudoeste, Brasília - DF</p>
+  <h4>Suporte</h4>
+  <p>[WhatsApp e e-mail a confirmar]</p>
+  <p style="margin-top:18px;color:#6f7573">© 2026 Faro Restaurante.</p>
 </div></footer>
 
 <div class="mobile-bar"><div class="wrap"><div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher · R$ 197</a></div></div></div>
