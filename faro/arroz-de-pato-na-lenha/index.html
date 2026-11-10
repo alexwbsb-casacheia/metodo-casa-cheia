@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#000000">
+<title>Arroz de Pato na Lenha | Só aos domingos no Faro</title>
+<meta name="description" content="Arroz de pato feito no fogão a lenha + cocada de forno, só aos domingos no Faro. Individual por R$ 149,90 ou casal por R$ 249,90.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000;--coal:#0a0b0b;--panel:#121514;--panel2:#171b1a;
+  --text:#d5d5d5;--white:#fff;--beige:#e3cfb9;--bronze:#957b5f;--gold:#997429;--gold-l:#c9a46a;
+  --green:#30705b;--green-d:#303c3c;--line:rgba(227,207,185,.22)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--text);font-family:Montserrat,Arial,sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(100% - 36px,1080px);margin:auto}
+.label{font-family:Montserrat,sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--beige);font-weight:500}
+.lined{border-left:1px solid var(--line);padding-left:18px;position:relative}
+.lined:before{content:"";position:absolute;left:-1px;top:22px;width:2px;height:58px;background:var(--white)}
+
+/* ---------- placeholders de imagem ---------- */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(135deg,#111413 0 14px,#0c0e0d 14px 28px);border:1px dashed rgba(227,207,185,.45);color:var(--beige);font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:16px}
+.ph small{display:block;letter-spacing:.06em;text-transform:none;color:#9aa19f;margin-top:6px;font-size:12px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--black);color:var(--white);overflow:hidden}
+.hero-bg{position:relative;height:62vh;min-height:380px;max-height:620px}
+.hero-bg .ph,.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.35) 70%,#000 100%)}
+.brand{position:absolute;top:22px;left:0;right:0;z-index:2;text-align:center;line-height:1}
+.brand b{display:block;font-weight:400;font-size:24px;letter-spacing:.55em;padding-left:.55em;color:var(--white)}
+.brand small{display:block;font-family:'Work Sans',sans-serif;font-size:9px;letter-spacing:.6em;padding-left:.6em;color:var(--beige);margin-top:8px}
+.brand img{max-height:54px;width:auto;margin:auto}
+.hero-content{position:relative;z-index:2;margin-top:-120px;padding-bottom:46px}
+.hero h1{font-weight:600;font-size:clamp(46px,14vw,92px);line-height:.95;letter-spacing:.1em;text-transform:uppercase;margin:14px 0 18px}
+.hero h1 span{display:block;color:var(--gold-l);font-weight:300}
+.sub1{font-size:16px;font-weight:500;color:var(--white);margin:0 0 18px;line-height:1.45;letter-spacing:.02em}
+.price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.price .from{font-size:14px;color:#8d9391;text-decoration:line-through;letter-spacing:.06em}
+.price .now{font-weight:600;font-size:52px;line-height:1;color:var(--gold-l);letter-spacing:.02em}
+.sub2{font-size:14px;font-weight:600;color:var(--beige);margin:8px 0 0;letter-spacing:.04em}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:22px}
+.badge{border:1px solid var(--line);padding:12px 12px;font-size:11px;color:#b9bfbd;letter-spacing:.03em}
+.badge b{display:block;color:var(--white);font-weight:600;font-size:15px;letter-spacing:.04em;margin-bottom:2px}
+.badge.hot{border-color:var(--gold-l);background:rgba(153,116,41,.14)}
+.badge.hot b{color:var(--gold-l)}
+
+/* ---------- CTA ---------- */
+.cta-wrap{position:relative;display:block;margin:26px 0 0}
+.cta-wrap:before{content:"";position:absolute;inset:-9px;border-radius:6px;background:rgba(201,164,106,.16);animation:ctaHalo 2s ease-out infinite;pointer-events:none}
+.btn{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:62px;padding:20px 18px;background:linear-gradient(135deg,var(--beige),var(--gold-l));color:#0b0b0b;border-radius:3px;box-shadow:0 6px 0 #6e5320,0 16px 30px rgba(0,0,0,.55);font-family:Montserrat,sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.14em;line-height:1.25;text-align:center;text-transform:uppercase;transition:transform .2s ease,box-shadow .2s ease;animation:ctaBreath 2.4s ease-in-out infinite}
+.btn:after{content:'→';font-size:20px;line-height:1;letter-spacing:0}
+.btn:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 9px 0 #6e5320,0 20px 34px rgba(0,0,0,.6)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #6e5320,0 8px 16px rgba(0,0,0,.4)}
+.validity{display:block;position:relative;z-index:2;margin:18px 0 0;padding:0 10px;text-align:center;font-size:11.5px;line-height:1.5;color:#8d9391;letter-spacing:.03em}
+
+/* ---------- SEÇÕES ---------- */
+.section{padding:56px 0}
+.section.alt{background:var(--coal)}
+.section h2{font-weight:400;font-size:25px;line-height:1.3;letter-spacing:.08em;color:var(--white);margin:12px 0 14px}
+.section h3{font-weight:500;font-size:18px;letter-spacing:.08em;text-transform:uppercase;color:var(--white);margin:14px 0 6px}
+.section p{color:var(--text);margin:10px 0;font-size:15px}
+.lead{color:var(--beige)!important}
+.items{display:grid;gap:18px;margin-top:22px}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.06);padding:0 0 20px}
+.card .feature{aspect-ratio:4/3;overflow:hidden}
+.card .feature img{width:100%;height:100%;object-fit:cover}
+.card .card-body{padding:4px 20px 0}
+.card .label{display:block;margin-top:16px;color:var(--bronze)}
+.card p{font-size:14px;color:#b9bfbd}
+.pick{margin-top:18px;color:var(--white)!important;font-weight:600;letter-spacing:.04em}
+.anchor{border:1px solid var(--gold);background:linear-gradient(160deg,#141210,#0b0a09);padding:26px 20px;margin:26px 0 0;text-align:center}
+.anchor .from{color:#8d9391;text-decoration:line-through;font-size:14px;letter-spacing:.08em}
+.anchor .now{display:block;font-weight:600;font-size:40px;line-height:1.1;color:var(--gold-l);margin:6px 0}
+.anchor p{color:var(--beige);margin:6px 0 0;font-size:14px}
+.scarcity{display:flex;gap:12px;align-items:center;border:1px solid rgba(201,164,106,.5);padding:14px 16px;margin:16px 0 0;font-weight:600;color:var(--beige);font-size:13.5px;letter-spacing:.04em}
+.scarcity i{font-style:normal;font-size:18px}
+
+/* galeria do espaço */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:22px}
+.gallery .ph,.gallery img{aspect-ratio:3/4;width:100%;object-fit:cover}
+.review{margin-top:22px}
+.review .ph{min-height:220px}
+
+/* passos */
+.steps{display:grid;gap:18px;margin-top:22px}
+.step{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}
+.num{width:46px;height:46px;border:1px solid var(--green);background:rgba(48,112,91,.22);display:grid;place-items:center;color:var(--white);font-size:12px;font-weight:600;letter-spacing:.08em}
+.step h3{margin-top:6px;font-size:15px}
+.step p{margin:4px 0;font-size:14px}
+
+/* regras */
+.rules{background:var(--coal)}
+.rule-block{border-top:1px solid rgba(255,255,255,.08);padding:18px 0 4px}
+.rule-block:first-of-type{border-top:0}
+.rule-block h3{font-size:13px;letter-spacing:.2em;color:var(--beige);margin:0 0 6px}
+.rules ul{padding-left:18px;margin:6px 0}
+.rules li{margin:9px 0;color:#c4c9c7;font-size:14px;line-height:1.55}
+.rules li b{color:var(--white);font-weight:600}
+.note{font-size:12.5px;color:#8d9391;margin-top:16px}
+
+/* rodapé */
+.footer{background:#000;border-top:1px solid rgba(255,255,255,.08);padding:34px 0 30px;font-size:12.5px;text-align:center;letter-spacing:.06em}
+.footer p{margin:7px 0;color:#b9bfbd}
+.footer .fb{font-weight:400;letter-spacing:.5em;padding-left:.5em;color:var(--white);font-size:16px;margin-bottom:14px}
+.footer h4{font-weight:500;color:var(--white);font-size:12px;letter-spacing:.14em;margin:18px 0 6px;text-transform:uppercase}
+
+/* barra fixa mobile */
+.mobile-bar{position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,.94);backdrop-filter:blur(6px);padding:10px 16px;border-top:1px solid rgba(201,164,106,.35);z-index:999}
+.mobile-bar .cta-wrap{margin:0}
+.mobile-bar .btn{min-height:56px;font-size:12px}
+.spacer{height:100px}
+
+@keyframes ctaBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+@keyframes ctaHalo{0%{opacity:.65;transform:scale(.94)}70%,100%{opacity:0;transform:scale(1.1)}}
+@media(prefers-reduced-motion:reduce){.btn,.cta-wrap:before{animation:none}}
+@media(min-width:760px){
+  .wrap{width:min(100% - 64px,1080px)}
+  .hero-bg{height:70vh;max-height:720px}
+  .hero-content{margin-top:-220px;max-width:640px}
+  .items{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .gallery{gap:10px}
+  .section{padding:84px 0}
+  .section h2{font-size:30px}
+  .mobile-bar,.spacer{display:none}
+}
+
+/* opções individual x casal */
+.options{display:grid;gap:14px;margin-top:24px}
+.opt{border:1px solid var(--line);background:linear-gradient(160deg,#141210,#0b0a09);padding:22px 18px 20px;position:relative}
+.opt.best{border-color:var(--gold-l)}
+.opt .tag{position:absolute;top:-11px;left:16px;background:var(--gold-l);color:#0b0b0b;font-size:10px;font-weight:700;letter-spacing:.18em;padding:4px 10px;text-transform:uppercase}
+.opt h3{margin:0 0 6px!important;text-transform:uppercase;font-weight:500;font-size:15px!important;letter-spacing:.2em!important;color:var(--beige)!important}
+.opt .what{font-size:14px;color:#c4c9c7;margin:0 0 12px}
+.opt .from{font-size:13px;color:#8d9391;text-decoration:line-through;letter-spacing:.06em}
+.opt .now{display:block;font-weight:600;font-size:38px;line-height:1.1;color:var(--gold-l);margin:2px 0 2px}
+.opt .per{font-size:12.5px;color:var(--beige);letter-spacing:.04em}
+.opt .cta-wrap{margin-top:18px}
+.mobile-bar .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mobile-bar .btn{font-size:10.5px;letter-spacing:.08em;padding:12px 8px;min-height:54px;gap:6px}
+.mobile-bar .btn:after{content:''}
+.mobile-bar .btn small{display:block;font-size:13px;letter-spacing:.02em;margin-top:2px}
+.mobile-bar .btn span{display:block}
+@media(min-width:760px){.options{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg">
+    <!-- trocar pelo arquivo: <img src="assets/hero-arroz-de-pato.webp" alt="Arroz de pato na lenha no Faro"> -->
+    <div class="ph">FOTO DE FUNDO<small>Arroz de pato na mesa do Faro · enviar arquivo</small></div>
+    <div class="brand"><b>FARO</b><small>RESTAURANTE</small></div>
+  </div>
+  <div class="wrap hero-content">
+    <div class="label">Só aos domingos · Só no Faro</div>
+    <h1>Arroz de pato<span>na lenha</span></h1>
+    <p class="sub1">Arroz de pato feito no fogão a lenha + cocada de forno. Individual ou para o casal.</p>
+    <div class="badges">
+      <div class="badge"><b>Domingo</b>no almoço</div>
+      <div class="badge"><b>Fogão a lenha</b>prato exclusivo do domingo</div>
+      <div class="badge"><b>Individual ou casal</b>você escolhe</div>
+      <div class="badge hot"><b>Apenas 50</b>vouchers disponíveis</div>
+    </div>
+  <div class="options">
+    <div class="opt">
+      <h3>Individual</h3>
+      <p class="what">1 arroz de pato na lenha + 1 cocada de forno</p>
+      <span class="from">De R$ 161</span>
+      <span class="now">R$ 149,90</span>
+      <span class="per">Para 1 pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-individual">Garantir voucher individual</a></div>
+    </div>
+    <div class="opt best">
+      <span class="tag">Mais vantagem</span>
+      <h3>Casal</h3>
+      <p class="what">2 arroz de pato na lenha + 1 cocada de forno para dividir</p>
+      <span class="from">De R$ 280</span>
+      <span class="now">R$ 249,90</span>
+      <span class="per">Para 2 pessoas · menos de R$ 125 por pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-casal">Garantir voucher do casal</a></div>
+    </div>
+  </div>
+    <div class="validity">Voucher válido por 30 dias após a compra. Não precisa de reserva.</div>
+  </div>
+</section>
+
+<!-- ================= O QUE VEM ================= -->
+<section class="section alt"><div class="wrap">
+  <div class="lined">
+    <div class="label">Arroz de pato na lenha</div>
+    <h2>Lembra do almoço de domingo? Aquele com cheiro de lenha, que reunia todo mundo à mesa?</h2>
+    <p class="lead">No Faro, o domingo tem um prato só dele.</p>
+  </div>
+  <p>O arroz de pato feito no fogão a lenha, com sabor de comida de família, servido só nesse dia da semana. E para fechar, a cocada de forno da casa.</p>
+  <div class="items">
+    <div class="card">
+      <div class="feature ph">FOTO DO PRATO<small>Arroz de pato · enviar arquivo</small></div>
+      <div class="card-body">
+        <span class="label">Prato principal</span>
+        <h3>Arroz de pato na lenha</h3>
+        <p>Feito no fogão a lenha e servido só aos domingos.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="feature ph">FOTO DA SOBREMESA<small>Cocada de forno · enviar arquivo</small></div>
+      <div class="card-body">
+        <span class="label">Sobremesa</span>
+        <h3>Cocada de forno</h3>
+        <p>Dourada, com sorvete e doce de leite.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="feature ph">FOTO<small>Mesa do casal no domingo · enviar arquivo</small></div>
+      <div class="card-body">
+        <span class="label">Vai a dois?</span>
+        <h3>Voucher do casal</h3>
+        <p>2 arroz de pato e 1 cocada de forno para dividir, por R$ 249,90. Bem menos que dois individuais.</p>
+      </div>
+    </div>
+  </div>
+  <p class="pick">Escolha como quer o seu:</p>
+  <div class="options">
+    <div class="opt">
+      <h3>Individual</h3>
+      <p class="what">1 arroz de pato na lenha + 1 cocada de forno</p>
+      <span class="from">De R$ 161</span>
+      <span class="now">R$ 149,90</span>
+      <span class="per">Para 1 pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-individual">Garantir voucher individual</a></div>
+    </div>
+    <div class="opt best">
+      <span class="tag">Mais vantagem</span>
+      <h3>Casal</h3>
+      <p class="what">2 arroz de pato na lenha + 1 cocada de forno para dividir</p>
+      <span class="from">De R$ 280</span>
+      <span class="now">R$ 249,90</span>
+      <span class="per">Para 2 pessoas · menos de R$ 125 por pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-casal">Garantir voucher do casal</a></div>
+    </div>
+  </div>
+  <div class="scarcity"><i>⚠️</i>Domingo é um dia por semana. Este prato também. Apenas 50 vouchers disponíveis.</div>
+  <div class="validity">Voucher válido por 30 dias após a compra.</div>
+</div></section>
+
+<!-- ================= O ESPAÇO ================= -->
+<section class="section"><div class="wrap">
+  <div class="lined">
+    <div class="label">O espaço</div>
+    <h2>Um oásis no coração do Sudoeste.</h2>
+  </div>
+  <div class="gallery">
+    <div class="ph">FOTO<small>Ambiente</small></div>
+    <div class="ph">FOTO<small>Mesa</small></div>
+    <div class="ph">FOTO<small>Piscina</small></div>
+  </div>
+  <div class="review">
+    <div class="label">Na voz de quem já veio</div>
+    <div class="ph" style="margin-top:14px">PRINT DE AVALIAÇÃO REAL<small>Avaliação do Google · enviar arquivo</small></div>
+  </div>
+</div></section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section alt"><div class="wrap">
+  <div class="lined">
+    <div class="label">Simples assim</div>
+    <h2>Como funciona</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><div><h3>Escolha e garanta</h3><p>Individual ou casal. A compra é online e leva poucos minutos.</p></div></div>
+    <div class="step"><div class="num">02</div><div><h3>Receba o QR Code</h3><p>Ele chega no seu WhatsApp e no seu e-mail assim que o pagamento é confirmado.</p></div></div>
+    <div class="step"><div class="num">03</div><div><h3>Apresente e aproveite</h3><p>Mostre o QR Code ao chegar ao Faro, em qualquer domingo, no almoço.</p></div></div>
+  </div>
+  <div class="options">
+    <div class="opt">
+      <h3>Individual</h3>
+      <p class="what">1 arroz de pato na lenha + 1 cocada de forno</p>
+      <span class="from">De R$ 161</span>
+      <span class="now">R$ 149,90</span>
+      <span class="per">Para 1 pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-individual">Garantir voucher individual</a></div>
+    </div>
+    <div class="opt best">
+      <span class="tag">Mais vantagem</span>
+      <h3>Casal</h3>
+      <p class="what">2 arroz de pato na lenha + 1 cocada de forno para dividir</p>
+      <span class="from">De R$ 280</span>
+      <span class="now">R$ 249,90</span>
+      <span class="per">Para 2 pessoas · menos de R$ 125 por pessoa</span>
+      <div class="cta-wrap"><a class="btn" href="#checkout-casal">Garantir voucher do casal</a></div>
+    </div>
+  </div>
+  <div class="validity">Voucher válido por 30 dias após a compra. Não precisa de reserva.</div>
+</div></section>
+
+<!-- ================= REGRAS ================= -->
+<section class="section rules"><div class="wrap">
+  <div class="lined">
+    <div class="label">Antes de comprar</div>
+    <h2>Regras importantes</h2>
+  </div>
+
+  <div class="rule-block">
+    <h3>O que está incluso</h3>
+    <ul>
+      <li><b>Voucher individual:</b> 1 arroz de pato na lenha + 1 cocada de forno, para 1 pessoa.</li>
+      <li><b>Voucher do casal:</b> 2 arroz de pato na lenha + 1 cocada de forno para dividir, para 2 pessoas.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>O que não está incluso</h3>
+    <ul>
+      <li>Bebidas, entradas, couvert e outras sobremesas.</li>
+      <li>Outros pratos ou adicionais. Tudo o que for pedido além do voucher é pago à parte, no restaurante.</li>
+      <li>Taxa de serviço de 10%, cobrada no restaurante.</li>
+      <li>Não é possível trocar os itens do voucher por outros itens do cardápio.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Dias e horários de uso</h3>
+    <ul>
+      <li>Válido <b>somente aos domingos, no almoço</b> (12h às 17h).</li>
+      <li>Não válido de segunda a sábado.</li>
+      <li>Não válido em <b>feriados, vésperas de feriado e datas comemorativas</b> (como Dia dos Namorados, Dia das Mães, Natal e Réveillon).</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Como usar o voucher</h3>
+    <ul>
+      <li>Apresente o QR Code (no celular ou impresso) <b>ao chegar, antes de fazer o pedido</b>.</li>
+      <li>Uso único, em uma única visita. O voucher do casal vale para as duas pessoas na mesma mesa e não pode ser dividido em visitas diferentes.</li>
+      <li><b>Não precisa de reserva</b>. O atendimento segue a disponibilidade de mesas no momento da chegada.</li>
+      <li>Grupos com mais de um voucher na mesma mesa precisam fazer reserva com antecedência.</li>
+      <li>O voucher não pode ser trocado por dinheiro.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Compra e disponibilidade</h3>
+    <ul>
+      <li>Oferta limitada a <b>50 vouchers</b>, somando as opções individual e casal. Encerrada a quantidade, a oferta sai do ar.</li>
+      <li>O voucher é enviado por WhatsApp e e-mail após a confirmação do pagamento.</li>
+    </ul>
+  </div>
+
+  <div class="rule-block">
+    <h3>Validade e política de cancelamento</h3>
+    <ul>
+      <li>O voucher é válido por <b>30 dias a partir da data da compra</b>. Depois desse prazo, não poderá ser utilizado.</li>
+      <li><b>Cancelamento:</b> você pode cancelar a compra em até <b>7 dias após a compra</b>, desde que o voucher <b>não tenha sido utilizado</b>. Nesse caso, o valor é devolvido integralmente.</li>
+      <li>Vouchers já utilizados não podem ser cancelados.</li>
+      <li>Para cancelar, fale com o suporte pelo WhatsApp informado abaixo.</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="footer"><div class="wrap">
+  <p class="fb">FARO</p>
+  <p>@faro.restaurante</p>
+  <h4>Endereço</h4>
+  <p>Ao lado da Academia Unique · Sudoeste, Brasília - DF</p>
+  <h4>Suporte</h4>
+  <p>[WhatsApp e e-mail a confirmar]</p>
+  <p style="margin-top:18px;color:#6f7573">© 2026 Faro Restaurante.</p>
+</div></footer>
+
+<div class="mobile-bar"><div class="wrap"><div class="two">
+  <a class="btn" href="#checkout-individual"><span>Individual<small>R$ 149,90</small></span></a>
+  <a class="btn" href="#checkout-casal"><span>Casal<small>R$ 249,90</small></span></a>
+</div></div></div>
+<div class="spacer"></div>
+</body>
+</html>
