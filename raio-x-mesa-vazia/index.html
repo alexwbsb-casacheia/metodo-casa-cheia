@@ -165,6 +165,7 @@ table.t tr.tot td{font-weight:800;color:var(--gold2);border-bottom:0}
     <div class="field"><label>E-mail</label><input id="f-mail" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com"></div>
     <div class="field"><label>Nome do restaurante</label><input id="f-rest" placeholder="Ex.: Cantina do Sul"></div>
     <div class="field"><label>Instagram do restaurante</label><input id="f-ig" autocapitalize="off" placeholder="@seurestaurante"></div>
+    <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Site<input id="f-web" name="website" tabindex="-1" autocomplete="off"></label></div>
     <label class="chk"><input type="checkbox" id="f-lgpd"><span>Aceito receber meu Raio-X e contatos do Método Casa Cheia por WhatsApp e e-mail, conforme a <a href="/politica-de-privacidade/" target="_blank" style="color:var(--gold2)">Política de Privacidade</a>. Seus dados não são vendidos.</span></label>
     <div class="err" id="f-err"></div>
     <button class="btn" onclick="submitLead()">Ver meu Raio-X completo →</button>
@@ -269,7 +270,7 @@ function submitLead(){
   err("");window.LEAD=L;const C=calc();window.C=C;
   try{localStorage.setItem("mcc_lead",JSON.stringify({nome:L.nome,email:L.mail,wpp:L.wpp,rest:L.rest,rota:C.rota,marMes:Math.round(C.marMes),dias:C.lista}))}catch(e){}
   if(CFG.SHEETS_URL){try{fetch(CFG.SHEETS_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify({
-    nome:L.nome,whatsapp:L.wpp,email:L.mail,restaurante:L.rest,instagram:L.ig,negocio:LBL.neg,posicao:LBL.pos,capacidade:LBL.cap,dias_fracos:LBL.dias,turnos:LBL.tur||"",ocupacao:LBL.occ,ticket:LBL.tkt,fds:LBL.fds,faturamento:LBL.fat,
+    website:($("f-web")||{}).value||"",nome:L.nome,whatsapp:L.wpp,email:L.mail,restaurante:L.rest,instagram:L.ig,negocio:LBL.neg,posicao:LBL.pos,capacidade:LBL.cap,dias_fracos:LBL.dias,turnos:LBL.tur||"",ocupacao:LBL.occ,ticket:LBL.tkt,fds:LBL.fds,faturamento:LBL.fat,
     indice:C.score,faixa:C.faixa[0],perda_mes:Math.round(C.fatMes),margem_mes:Math.round(C.marMes),meta_20:Math.round(C.meta),rota:C.rota,
     utm_source:UTM.utm_source||"",utm_medium:UTM.utm_medium||"",utm_content:UTM.utm_content||"",utm_campaign:UTM.utm_campaign||""})})}catch(e){}}
   if(window.fbq)fbq("track","Lead");
