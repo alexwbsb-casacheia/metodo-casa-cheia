@@ -87,6 +87,9 @@ img{display:block;max-width:100%}
 .gallery .ph,.gallery img{aspect-ratio:3/4;width:100%;object-fit:cover}
 .review{margin-top:22px}
 .review .ph{min-height:220px}
+.reviews{display:grid;gap:12px;margin-top:14px}
+.reviews img{width:100%;height:auto;border-radius:8px;border:1px solid rgba(201,164,106,.28)}
+@media(min-width:760px){.reviews{grid-template-columns:1fr 1fr;align-items:start}}
 
 /* passos */
 .steps{display:grid;gap:18px;margin-top:22px}
@@ -138,7 +141,7 @@ img{display:block;max-width:100%}
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="assets/hero-faro.webp" alt="Taglio de Alcatra servido na mesa do Faro" fetchpriority="high">
+    <img src="assets/hero-faro.webp" alt="Faro à noite, mesas ao redor da piscina" fetchpriority="high">
     <div class="brand"><b>FARO</b><small>RESTAURANTE</small></div>
   </div>
   <div class="wrap hero-content">
@@ -184,7 +187,7 @@ img{display:block;max-width:100%}
       </div>
     </div>
     <div class="card">
-      <div class="feature"><img src="assets/petit-gateau.webp" alt="Petit Gâteau com sorvete" loading="lazy"></div>
+      <div class="feature"><img src="assets/petit-gateau.webp" alt="Petit Gâteau do Faro com sorvete" loading="lazy"></div>
       <div class="card-body">
         <span class="label">Sobremesa para dividir</span>
         <h3>Petit Gâteau</h3>
@@ -210,15 +213,22 @@ img{display:block;max-width:100%}
     <h2>Um oásis no coração do Sudoeste.</h2>
   </div>
   <div class="gallery">
-    <img src="assets/galeria-1.webp" alt="Mesa do Faro em meio ao verde" loading="lazy">
-    <img src="assets/galeria-2.webp" alt="Mesa para dois no Faro" loading="lazy">
-    <img src="assets/galeria-3.webp" alt="Carbonara do Faro" loading="lazy">
+    <img src="assets/galeria-1.webp" alt="Mesas do Faro ao lado da piscina" loading="lazy">
+    <img src="assets/galeria-2.webp" alt="Mesa posta com flores no Faro" loading="lazy">
+    <img src="assets/galeria-3.webp" alt="Jardim e piscina do Faro à noite" loading="lazy">
+    <img src="assets/galeria-4.webp" alt="Salão do Faro em meio às plantas" loading="lazy">
+    <img src="assets/galeria-5.webp" alt="Mesa à luz de velas no Faro" loading="lazy">
+    <img src="assets/galeria-6.webp" alt="Fachada iluminada do Faro" loading="lazy">
   </div>
-  <!-- avaliação real: reativar quando tiver o print do Google
   <div class="review">
-    <div class="label">Na voz de quem já veio</div>
-    <img src="assets/avaliacao.webp" alt="Avaliação real do Faro no Google" style="margin-top:14px;width:100%">
-  </div> -->
+    <div class="label">Na voz de quem já veio · avaliações reais do Google</div>
+    <div class="reviews">
+      <img src="assets/avaliacao-1.webp" alt="Avaliação 5 estrelas de Marcella Moura no Google" loading="lazy">
+      <img src="assets/avaliacao-2.webp" alt="Avaliação 5 estrelas de Iza Andrade no Google" loading="lazy">
+      <img src="assets/avaliacao-3.webp" alt="Avaliação 5 estrelas de Layane Cristina no Google" loading="lazy">
+      <img src="assets/avaliacao-4.webp" alt="Avaliação 5 estrelas de Valdirene Monteiro no Google" loading="lazy">
+    </div>
+  </div>
   <div class="cta-wrap"><a class="btn" href="#checkout">Garantir meu voucher agora</a></div>
   <div class="validity">Voucher válido por 30 dias após a compra.</div>
 </div></section>
